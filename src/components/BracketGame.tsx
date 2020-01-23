@@ -73,6 +73,23 @@ class BracketGame extends React.PureComponent<BracketGameProps> {
 
       ...rest
     } = this.props;
+    
+    const styles = {
+      ...this.props.styles,
+      ...game.styles
+    };
+    
+    const {
+      backgroundColor,
+      hoverBackgroundColor,
+      scoreBackground,
+      winningScoreBackground,
+      teamNameStyle,
+      teamScoreStyle,
+      gameNameStyle,
+      gameTimeStyle,
+      teamSeparatorStyle
+    } = styles;
 
     const { sides } = game;
 
